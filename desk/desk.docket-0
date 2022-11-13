@@ -1,0 +1,11 @@
+:~
+  title+'Status'
+  info+'If you are in Lisbon and my pal, dm me!'
+  color+0xf2.f3ef
+  version+[0 0 2]
+  website+''
+  license+'MIT'
+  image+''
+  base+'status'
+  glob-ames+[~zod 0v0]
+==
