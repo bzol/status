@@ -15,6 +15,5 @@
 +$  update
   $%
     [%update =ship =status]
-    [%frontend =mystatus =paldata]
   ==
 --
