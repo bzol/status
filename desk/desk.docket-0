@@ -1,11 +1,11 @@
 :~
   title+'Status'
-  info+'If you are in Lisbon and my pal, dm me!'
-  color+0xf2.f3ef
-  version+[0 0 2]
-  website+''
+  info+'App for sharing your location and other information with your pals'
+  color+0xff.ffff
+  version+[1 0 0]
+  website+'https://github.com/bzol/status'
   license+'MIT'
-  image+''
+  image+'https://upload.wikimedia.org/wikipedia/commons/b/b3/Icon_Information.svg'
   base+'status'
-  glob-ames+[~zod 0v0]
+  glob-ames+[~dister-dister-pontus-fadpun 0v0]
 ==

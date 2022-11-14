@@ -48,7 +48,7 @@ const Home = () => {
 		availability: "off",
 	});
 	const [palData, setPalData] = useState([
-		{'ship': '~pontus-fadpun-polrel-witter', location: 'Lisbonjfdlkgj gfdkgjlkerj r er tre te te rr egrljgeklj', note: 'Very long note hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooofjsdfsd fd fd gdf gfdgfdkerjlkerjt tre ter te rt e tqte rewwwwwwwwwwwww ret reeeeeeeeeeeeeeegrger grgreeeeeeeeeeger gre ggggggggggggggggr er t re', availability: 'off' }
+		// {'ship': '~pontus-fadpun-polrel-witter', location: 'Lisbonjfdlkgj gfdkgjlkerj r er tre te te rr egrljgeklj', note: 'Very long note hellooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooofjsdfsd fd fd gdf gfdgfdkerjlkerjt tre ter te rt e tqte rewwwwwwwwwwwww ret reeeeeeeeeeeeeeegrger grgreeeeeeeeeeger gre ggggggggggggggggr er t re', availability: 'off' }
 	]);
 
 	// TODO scry with callback?
