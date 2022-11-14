@@ -73,16 +73,16 @@
     %-  limo 
     :~  location+[%s location:mystatus]
         note+[%s note:mystatus]
-        activity+[%s activity:mystatus]
+        availability+[%s availability:mystatus]
     ==
-  =*  getpal  |=  pal=[ship=@p location=@ta note=@ta =activity:status] 
+  =*  getpal  |=  pal=[ship=@p location=@ta note=@ta =availability:status] 
   :-  %o
   %-  malt
   %-  limo
   :~  [%ship [%s (scot %p ship.pal)]]
       [%location [%s location.pal]]
       [%note [%s note.pal]]
-      [%activity [%s activity.pal]]
+      [%availability [%s availability.pal]]
   ==
   =/  paldata-json
     ^-  json

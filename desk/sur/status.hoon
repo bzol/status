@@ -2,10 +2,11 @@
 +$  ship      @p
 +$  location  @ta
 +$  note      @ta
-+$  activity  ?(%off %nodisturb %meetme %working)
-+$  status    [=location =note =activity]
++$  availability  ?(%off %nodisturb %meetme)
+:: +$  availability  @ta
++$  status    [=location =note =availability]
 
-+$  mystatus  [=location =note =activity]
++$  mystatus  [=location =note =availability]
 +$  paldata  (map ship status)
 
 +$  action

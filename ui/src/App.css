@@ -4,43 +4,81 @@ html {
 }
 
 .home {
+	width: 600px;
+}
+
+input {
+	flex-grow:1;
+	height: r0px;
+	font-size: 14pt;
+}
+
+label {
+	/* height: 20px; */
+	/* font-size: 14pt; */
+	width: 90px;
+}
+
+select {
+	flex-grow:1;
+	height: 28px;
+	font-size: 14pt;
 }
 
 .mystatus {
+	display: flex;
+	flex-direction: column;
 }
 
 .mystatus-location {
+	display: flex;
+	margin: 2px 0px;
 }
 
 .mystatus-note {
 }
 
-.mystatus-activity {
+.mystatus-availability {
+	/* flex-grow: 1; */
+}
+
+.mystatus-handle {
+	/* float:right; */
+	padding: 5px;
 }
 
 .paldata {
 }
 
 .pal {
+	border-bottom: 1px solid black;
+	display:flex;
+	flex-wrap:nowrap;
 }
 
-
 .pal-ship {
-	display:inline-block;
+	/* display:inline-block; */
+	flex: 1 1 0px;
 	margin-right: 20px;
 }
 
 .pal-location {
-	display:inline-block;
+	/* display:inline-block; */
+	flex-grow: 1;
+	flex: 1 1 0px;
 	margin-right: 20px;
 }
 
 .pal-note {
-	display:inline-block;
+	/* display:inline-block; */
+	flex-grow: 1;
+	flex: 1 1 0px;
 	margin-right: 20px;
 }
 
-.pal-activity {
-	display:inline-block;
+.pal-availability {
+	/* display:inline-block; */
+	flex: 1 1 0px;
+	flex-grow: 1;
 	margin-right: 20px;
 }
