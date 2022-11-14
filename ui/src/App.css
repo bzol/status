@@ -4,11 +4,11 @@ html {
 }
 
 .home {
-	width: 600px;
+	width: 750px;
 }
 
 input {
-	flex-grow:1;
+	flex-grow: 1;
 	height: r0px;
 	font-size: 14pt;
 }
@@ -20,7 +20,7 @@ label {
 }
 
 select {
-	flex-grow:1;
+	flex-grow: 1;
 	height: 28px;
 	font-size: 14pt;
 }
@@ -32,7 +32,7 @@ select {
 
 .mystatus-location {
 	display: flex;
-	margin: 2px 0px;
+	margin: 0px 0px;
 }
 
 .mystatus-note {
@@ -45,6 +45,24 @@ select {
 .mystatus-handle {
 	/* float:right; */
 	padding: 5px;
+	/* margin: 5px 0px; */
+	margin-bottom: 5px;
+	margin-left: 90px;
+	/* background-color: green; */
+	/* color: white; */
+
+  background-color: #1560BD;
+  color: white;
+	border: none;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+	font-size: 1em;
+	font-family: verdana;
+}
+
+.mystatus-handle:hover, .mystatus-handle:active {
+  background-color: #0197f6;
 }
 
 .paldata {
@@ -52,14 +70,17 @@ select {
 
 .pal {
 	border-bottom: 1px solid black;
-	display:flex;
-	flex-wrap:nowrap;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 .pal-ship {
 	/* display:inline-block; */
 	flex: 1 1 0px;
 	margin-right: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .pal-location {
@@ -67,6 +88,9 @@ select {
 	flex-grow: 1;
 	flex: 1 1 0px;
 	margin-right: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .pal-note {
@@ -74,6 +98,18 @@ select {
 	flex-grow: 1;
 	flex: 1 1 0px;
 	margin-right: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.pal-note:hover, .pal-location:hover, .pal-ship:hover {
+	overflow: visible;
+	white-space: normal;
+	width: auto;
+	/* position: absolute; */
+	background-color: #fff;
+	word-break: break-all;
 }
 
 .pal-availability {

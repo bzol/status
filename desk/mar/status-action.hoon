@@ -9,7 +9,7 @@
     %-  of
     :~
       :: [%set-status (ot ~[location+so note+so activity+(se %tas)])]
-      [%set-status (ot ~[location+so note+so activity+so])]
+      [%set-status (ot ~[location+so note+so availability+so])]
     ==
   --
 ++  grow

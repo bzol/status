@@ -19,7 +19,7 @@
 ::
 ++  on-init
   ^-  (quip card _this)
-  :_  this
+  :_  this(mystatus ['' '' 'off'])
   :~
       [%pass /targets %agent [our.bowl %pals] %watch /targets]
       [%pass /leeches %agent [our.bowl %pals] %watch /leeches]
@@ -59,8 +59,8 @@
     :: ?>  (~(has in friends) src.bowl)
     ~&  'on-watch-happened'
     :_  this
-    ~
-    :: :~  [%give %fact ~ %status-update !>(`update:status`update+)]
+    [%give %fact ~[/updates] %status-update !>(`update:status`[%update our.bowl mystatus])]~
+
   ==
 ++  on-leave  on-leave:def
 ++  on-peek
