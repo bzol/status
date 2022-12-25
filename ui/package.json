@@ -1,6 +1,6 @@
 {
   "name": "template",
-  "homepage": "/apps/template/",
+  "homepage": "/apps/status/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

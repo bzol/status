@@ -14,7 +14,6 @@ const scryStatus = (path) => {
 const scryAll = (setMyStatus, setPalData) => {
 	scryStatus("/mystatus")
 		.then((res) => {
-			console.log(res);
 			setMyStatus(res);
 		})
 		.catch((err) => {
@@ -22,7 +21,6 @@ const scryAll = (setMyStatus, setPalData) => {
 		});
 	scryStatus("/paldata")
 		.then((res) => {
-			console.log(res);
 			setPalData(res);
 		})
 		.catch((err) => {
@@ -33,7 +31,6 @@ const scryAll = (setMyStatus, setPalData) => {
 const scryPalData = (setPalData) => {
 	scryStatus("/paldata")
 		.then((res) => {
-			console.log(res);
 			setPalData(res);
 		})
 		.catch((err) => {
@@ -53,8 +50,8 @@ const Home = () => {
 
 	// TODO scry with callback?
 	useEffect(() => {
-		// scryAll(setMyStatus, setPalData);
-		// setInterval(() => scryPalData(setPalData), 15000);
+		scryAll(setMyStatus, setPalData);
+		setInterval(() => scryPalData(setPalData), 30000);
 	}, []);
 
 	const handleLocation = (location) => {
@@ -70,7 +67,6 @@ const Home = () => {
 	};
 
 	const handleSubmitMyStatus = () => {
-		console.log(myStatus);
 		window.urbit.poke({
 			app: "status",
 			mark: "status-action",
